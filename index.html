@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta property='og:locale' content='ko_KR' />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='' />
+    <meta property='og:site_name' content='' />
+    <meta property='og:title' content='' />
+    <meta property='og:description' content='' />
+    <meta property='og:image' content='' />
+    <meta name='title' content='닥터포커스 > 로그인' />
+    <meta name='subject' content='닥터포커스 > 로그인' />
+    <meta name='description' content='' />
+    <meta name='keywords' content='' />
+    <link rel="dns-prefetch" href="">
+    <link rel="canonical" href="">
+    <!-- 모바일 사용성 -->
+    <meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="">
+    <title>닥터포커스</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.css?ver=0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css?ver=0">
+    <link rel="stylesheet" href="assets/css/style.css?ver=0">
+    <link rel="stylesheet" href="assets/css/member.css?ver=0">
+    <link rel="stylesheet" href="assets/css/responsive.css?ver=0">
+    <!--[if lte IE 8]>
+    <script src="../assets/js/html5.js"></script>
+    <![endif]-->
+    <script src="assets/js/jquery-1.12.4.min.js?ver=0"></script>
+    <script src="assets/js/jquery-migrate-1.4.1.min.js?ver=0"></script>
+    <script src="assets/js/wrest.js?ver=0"></script>
+    <script src="assets/js/placeholders.min.js?ver=0"></script>
+    <script src="assets/js/jquery-ui.js?ver=0"></script>
+    <script src="assets/js/swiper.js?ver=0"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/modernizr.custom.70111.js?ver=0"></script>
+</head>
+
+<body class="login_page">
+
+<header>
+</header>
+<main class="login_page">
+    <section class="cont_wrap">
+
+        <div class="logo_wrap">
+            <div class="img_wrap img_logo">
+                <img src="assets/img/comm/logo.png" alt="닥터포커스 스터디카페"/>
+            </div>
+            <div class="img_wrap txt_logo">
+                <img src="assets/img/comm/txtLogo.png" alt="닥터포커스 스터디카페"/>
+            </div>
+        </div>
+        <div class="form_wrap login_form">
+            <form id="flogin" name="flogin" action="main.html" onsubmit="return flogin_submit(this);" method="get">
+                <input type="hidden" name="url" value="main.html">
+                <fieldset id="login_fs">
+                    <legend>회원로그인</legend>
+                    <div class="ip_wrap">
+                        <label>
+                            <strong class="sound_only">회원아이디 필수</strong>
+                            <input type="text" name="user_id" id="user_id" required class="frm_input required" size="20" maxLength="12" placeholder="휴대전화 번호(숫자만 입력)"
+                                   pattern="[0-9]+" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        </label>
+                    </div>
+                    <div class="ip_wrap">
+                        <label>
+                            <strong class="sound_only">비밀번호 필수</strong>
+                            <input type="password" name="user_password" id="user_pw" required class="frm_input required" size="20" maxLength="20" placeholder="비밀번호">
+                        </label>
+                    </div>
+                    <div id="login_info">
+                        <div class="login_if_auto chk_box">
+                            <label>
+                                <input type="checkbox" name="auto_login" id="login_auto_login" class="selec_chk">
+                                <span>자동로그인</span>
+                            </label>
+                        </div>
+                    </div>
+                        <button type="submit" class="btn_submit">다음</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="register_btn_wrap">
+            <div class="txt_wrap">
+                <div class="txt">
+                    아직 회원이 아니시라면?
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="flex_wrap">
+                <a class="findid_btn gray_btn btn" href="findid.html">
+                    아이디 찾기
+                </a>
+                <a class="findpw_btn gray_btn btn" href="findpw.html">
+                    비밀번호 찾기
+                </a>
+            </div>
+            <a class="join_btn light_gray_btn btn" href="register.html">
+                회원가입
+            </a>
+        </div>
+    </section>
+</main>
+
+
+<!-- script -->
+<script src="assets/js/script.js?ver=0"></script>
+<script src="assets/js/sub.script.js?ver=0"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta property='og:locale' content='ko_KR' />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='' />
+    <meta property='og:site_name' content='' />
+    <meta property='og:title' content='' />
+    <meta property='og:description' content='' />
+    <meta property='og:image' content='' />
+    <meta name='title' content='닥터포커스 > 아이디 찾기' />
+    <meta name='subject' content='닥터포커스 > 아이디 찾기' />
+    <meta name='description' content='' />
+    <meta name='keywords' content='' />
+    <link rel="dns-prefetch" href="">
+    <link rel="canonical" href="">
+    <!-- 모바일 사용성 -->
+    <meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="">
+    <title>닥터포커스</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.css?ver=0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css?ver=0">
+    <link rel="stylesheet" href="assets/css/style.css?ver=0">
+    <link rel="stylesheet" href="assets/css/member.css?ver=0">
+    <link rel="stylesheet" href="assets/css/responsive.css?ver=0">
+    <!--[if lte IE 8]>
+    <script src="../assets/js/html5.js"></script>
+    <![endif]-->
+    <script src="assets/js/jquery-1.12.4.min.js?ver=0"></script>
+    <script src="assets/js/jquery-migrate-1.4.1.min.js?ver=0"></script>
+    <script src="assets/js/wrest.js?ver=0"></script>
+    <script src="assets/js/placeholders.min.js?ver=0"></script>
+    <script src="assets/js/jquery-ui.js?ver=0"></script>
+    <script src="assets/js/swiper.js?ver=0"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/modernizr.custom.70111.js?ver=0"></script>
+</head>
+
+<body class="member_page">
+
+<header class="back_header">
+    <div class="cont_wrap">
+        <a class="back_btn">
+            <img src="assets/img/comm/back_arrow.png" alt="뒤로"/>
+        </a>
+        <h2>
+            아이디 찾기
+        </h2>
+    </div>
+</header>
+<main class="member_page">
+    <section class="cont_wrap">
+        <div class="form_wrap find_form">
+            <form id="f_find" name="f_find" action="main.html" onsubmit="return findId_submit(this);" method="get">
+                <input type="hidden" name="url" value="">
+                <fieldset>
+                    <legend>아이디 찾기</legend>
+                    <div class="inner_wrap">
+                        <div class="dec_txt">
+                            가입한 휴대전화 번호를 입력해 주세요
+                        </div>
+                        <div class="ip_wrap">
+                            <input type="text" name="user_id" id="user_id" required class="frm_input required" size="20" maxLength="12" placeholder="휴대전화 번호"
+                                   pattern="[0-9]+" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        </div>
+                        <div class="ip_wrap">
+
+                        </div>
+                        <div class="ip_wrap flex_wrap">
+                            <input type="text" name="tk_number" id="tk_number" required class="frm_input required" size="10" maxLength="10" placeholder="인증번호">
+                            <a class="cert_btn gray_btn btn">
+                                인증번호 발송
+                            </a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn_submit">다음</button>
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+</main>
+
+
+<!-- script -->
+<script src="assets/js/script.js?ver=0"></script>
+<script src="assets/js/sub.script.js?ver=0"></script>
+
+</body>
+</html>
